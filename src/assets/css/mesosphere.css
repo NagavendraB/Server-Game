@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0E0E0E;
+}
+
+/* Server Operations */
+.app-container {
+  margin: 25px;
+  color: white
+}
+
+.left-box {
+  width: 310px;
+  float: left;
+  background: #1E1E1E;
+}
+
+.server-operations {
+  height: 225px;
+  padding: 22px;
+  text-align: center;
+}
+
+.add-icon, 
+.remove-icon {
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.remove-icon.icon-small {
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.icon-large {
+  width: 40px;
+  font-size: 31px;
+  border: 1px solid;
+}
+
+.icon-small {
+  width: 25px;
+  font-size: 18px;
+}
+
+/* Servers */
+.right-box {
+  width: 700px;
+  float: left;
+  padding: 15px;
+  min-height: 750px;
+  background: #000000;
+  padding-left: 30px;
+}
+
+.server {
+  width: 155px;
+  height: 120px;
+  background: #1E1E1E;
+  margin: 10px;
+  text-align: center;
+  float: left;
+  border-radius: 5px;
+}
+
+.server-operation {
+  float: left;
+  width: 90px;
+}
+
+.server-icons {
+  width: 183px;
+  margin: 0 auto;
+}
+
+/* Apps */
+.app, 
+.avilable-apps-heading {
+  padding: 20px;
+}
+
+.app {
+  border-bottom: 1px solid #1E1E1E;
+  background: #141414;
+  border-left: 5px solid;
+}
+
+.app-container {
+  overflow: hidden;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.apps-container 
+.icon-small {
+  float: right;
+  margin-right: 10px;
+}
+
+.app-running {
+  height: 120px;
+  line-height: 120px;
+  display: inline-block;
+  overflow: hidden;
+  animation: expand .5s ease-in-out;
+  float: left;
+}
+
+.app-icons {
+  float: right;
+  position: relative;
+  right: -43px;
+}
+
+/* App specific styles */
+.one-app {
+  width: 100%;
+  border-radius: 5px; 
+}
+
+.two-apps {
+  width: 50%;
+}
+
+.server:hover { 
+  background-color:lightgrey; 
+  transition:all 1s; 
+  cursor: pointer;
+} 
+
+/* App colors */
+.app1 {
+  border-left-color: #C40EC8;
+}
+
+.app2 {
+  border-left-color: #6D2AE0;
+}
+
+.app3 {
+  border-left-color: #00C4FB;
+}
+
+.app4 {
+  border-left-color: #43D8A3;
+}
+
+.app5 {
+  border-left-color: #8FDB5A;
+}
+
+.Hadoop {
+  background: #C40EC8;
+}
+
+.Rail {
+  background: #6D2AE0;
+}
+
+.Chronos {
+  background: #00C4FB;
+}
+
+.Storm {
+  background: #43D8A3;
+}
+
+.Spark {
+  background: #8FDB5A;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
